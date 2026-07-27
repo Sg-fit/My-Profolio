@@ -23,3 +23,33 @@ img {
 footer small {
   color: var(--pico-muted-color);
 }
+
+/* --- Accessibility ------------------------------------------------------ */
+
+/* Skip link: off-screen until a keyboard user tabs to it */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--pico-primary-background);
+  color: var(--pico-primary-inverse);
+  border-radius: 0 0 var(--pico-border-radius) 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Respect the OS "reduce motion" setting */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -68,7 +68,8 @@ Welcome any form of helpful information. Looking for lab or research opportunity
           if (response.ok) {
             form.hidden = true;
             elsewhere.hidden = false;
-            elsewhere.scrollIntoView({ behavior: "smooth" });
+            var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            elsewhere.scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
           } else {
             throw new Error("Formspree rejected the submission");
           }

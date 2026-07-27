@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.language }}">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | My Portfolio</title>
-    <meta name="description" content="{{ description }}">
+
+    {%- assign pageTitle = title | default: site.title %}
+    {%- assign pageDesc = description | default: site.description %}
+    {%- assign pagePath = page.url | url %}
+    {%- assign absoluteUrl = site.baseUrl | append: pagePath %}
+
+    <title>{{ pageTitle }} | {{ site.title }}</title>
+    <meta name="description" content="{{ pageDesc }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="canonical" href="{{ absoluteUrl }}">
+
+    <!-- Open Graph: controls the link preview on Discord, Slack, LinkedIn, iMessage -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageDesc }}">
+    <meta property="og:url" content="{{ absoluteUrl }}">
+    <meta property="og:image" content="{{ site.baseUrl }}{{ '/images/social-preview.png' | url }}">
+
+    <!-- Twitter/X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ pageTitle }}">
+    <meta name="twitter:description" content="{{ pageDesc }}">
+    <meta name="twitter:image" content="{{ site.baseUrl }}{{ '/images/social-preview.png' | url }}">
+
+    <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} — Blog" href="{{ '/feed.xml' | url }}">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <header class="container">
       <nav>
         <ul>
@@ -24,15 +52,16 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="main">
       {{ content }}
     </main>
 
     <footer class="container">
       <hr>
       <small>
-        &copy; 2026 Zimu Niu &middot;
+        &copy; 2026 Charlie Niu &middot;
         <a href="https://github.com/Sg-fit">GitHub</a> &middot;
+        <a href="{{ '/feed.xml' | url }}">RSS</a> &middot;
         <a href="{{ '/contact/' | url }}">Contact</a>
       </small>
     </footer>

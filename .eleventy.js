@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   // Copy the css/ folder straight through to the build output
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("favicon.svg");
 
   return {
     dir: {
