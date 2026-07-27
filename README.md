@@ -1,7 +1,7 @@
 # Charlie Niu — Portfolio
 
 Source code for my personal site, live at
-**[sg-fit.github.io](https://sg-fit.github.io/)**.
+**[sg-fit.github.io/My-Profolio](https://sg-fit.github.io/My-Profolio/)**.
 
 I'm a junior at Friends' Central School in Philadelphia, originally from Wuhan.
 This site is where I keep track of what I'm building — mostly work at the

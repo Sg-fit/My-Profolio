@@ -26,10 +26,11 @@ jobs:
 
       - run: npm ci
 
-      # Repo is Sg-fit.github.io, so the site lives at the domain root
+      # Serves the site under /<repo-name>/ . If the repo is ever renamed to
+      # <username>.github.io, change PATH_PREFIX to "/"
       - run: npx eleventy
         env:
-          PATH_PREFIX: /
+          PATH_PREFIX: /${{ github.event.repository.name }}/
 
       - uses: actions/configure-pages@v5
 
