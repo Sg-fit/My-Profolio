@@ -12,10 +12,10 @@ As interested person that is reading this paragraph, I hope you enjoy exploring 
 
 ## Where to go next
 
-- [About me](/about/) — background, skills, and what I'm learning
-- [Projects](/projects/) — things I've built
-- [Blog](/blog/) — notes on what I'm working through
-- [Contact](/contact/) — how to reach me
+- [About me]({{ '/about/' | url }}) — background, skills, and what I'm learning
+- [Projects]({{ '/projects/' | url }}) — things I've built
+- [Blog]({{ '/blog/' | url }}) — notes on what I'm working through
+- [Contact]({{ '/contact/' | url }}) — how to reach me
 
 ## Featured projects
 
@@ -23,7 +23,7 @@ As interested person that is reading this paragraph, I hope you enjoy exploring 
 {% assign featured = collections.project | sort: "date" | reverse %}
 {% for project in featured limit: 3 %}
   <li>
-    <a href="{{ project.url }}">{{ project.data.title }}</a>
+    <a href="{{ project.url | url }}">{{ project.data.title }}</a>
     — {{ project.data.description }}
   </li>
 {% endfor %}

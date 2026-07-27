@@ -13,7 +13,7 @@ Looking forward for my first Blog, Polishing now.
 {% assign posts = collections.post | sort: "date" | reverse %}
 {% for post in posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     — <small>{{ post.date | date: "%B %e, %Y" }}</small>
   </li>
 {% endfor %}

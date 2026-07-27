@@ -4,6 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("favicon.svg");
 
+  // Don't turn the README into a page
+  eleventyConfig.ignores.add("README.md");
+
   return {
     dir: {
       input: ".",

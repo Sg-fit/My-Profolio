@@ -12,7 +12,7 @@ This is a collection of what I have been doing in my field of interest and my ex
 {% assign sorted = collections.project | sort: "date" | reverse %}
 {% for project in sorted %}
 <article>
-  <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+  <h2><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
   <p>{{ project.data.description }}</p>
   <small>
     {{ project.date | date: "%B %e, %Y" }}
