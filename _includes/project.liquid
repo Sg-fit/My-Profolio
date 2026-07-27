@@ -1,0 +1,26 @@
+---
+layout: base.liquid
+---
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <p>
+      <small>
+        <strong>Date:</strong> {{ date | date: "%B %d, %Y" }}
+        {% if technologies %}&middot; <strong>Built with:</strong> {{ technologies }}{% endif %}
+      </small>
+    </p>
+    {% if github %}<a href="{{ github }}" role="button" class="outline">View source</a>{% endif %}
+    {% if demo %}<a href="{{ demo }}" role="button">Live demo</a>{% endif %}
+  </header>
+
+  {% if screenshot %}<img src="{{ screenshot | url }}" alt="Screenshot of {{ title }}">{% endif %}
+
+  {{ content }}
+
+  <footer>
+    <hr>
+    <a href="{{ '/projects/' | url }}">&larr; Back to all projects</a>
+  </footer>
+</article>

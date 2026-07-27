@@ -1,0 +1,25 @@
+/* Custom styles layered on top of Pico.css */
+
+:root {
+  --pico-font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Project cards on the projects index */
+main article {
+  margin-bottom: 1.5rem;
+}
+
+main article h2 {
+  margin-bottom: 0.25rem;
+}
+
+/* Screenshots keep their aspect ratio and never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--pico-border-radius);
+}
+
+footer small {
+  color: var(--pico-muted-color);
+}

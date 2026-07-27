@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | My Portfolio</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><strong><a href="{{ '/' | url }}" class="contrast">Charlie Niu</a></strong></li>
+        </ul>
+        <ul>
+          <li><a href="{{ '/' | url }}">Home</a></li>
+          <li><a href="{{ '/about/' | url }}">About</a></li>
+          <li><a href="{{ '/projects/' | url }}">Projects</a></li>
+          <li><a href="{{ '/blog/' | url }}">Blog</a></li>
+          <li><a href="{{ '/contact/' | url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="container">
+      <hr>
+      <small>
+        &copy; 2026 Zimu Niu &middot;
+        <a href="https://github.com/Sg-fit">GitHub</a> &middot;
+        <a href="{{ '/contact/' | url }}">Contact</a>
+      </small>
+    </footer>
+  </body>
+</html>
