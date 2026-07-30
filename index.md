@@ -1,14 +1,14 @@
 ---
 layout: base.liquid
 title: Home
-description: This is a pofolio page for a junior with cybersecurity ambitions. On his way to dreams. 
+description: This is a portfolio page for a junior with cybersecurity ambitions. On his way to dreams.
 ---
 
 # Hi, I'm Charlie Niu
 
-Welcome to the pofolio page of Charlie. I am currently a junior at Friends' Central School ('2028). Generally, I am a artist, student, explorer, and creater. Lately, I am exploring my jouney through the world of computer science and cybersecurity. Based on my previous projects, I am building a detection algorithm that can be delopyed on EVERY website to identify ai traffic from human. 
+Welcome to the portfolio page of Charlie. I am currently a junior at Friends' Central School ('2028). Generally, I am an artist, student, explorer, and creator. Lately, I am exploring my journey through the world of computer science and cybersecurity. Based on my previous projects, I am building a detection algorithm that can be deployed on every website to identify AI traffic from human traffic.
 
-As interested person that is reading this paragraph, I hope you enjoy exploring this website and find my experience entertaining alongside your life. I am on my long way to my dreams, and hopefully not missing any interesting scence along the way. 
+Thanks for stopping by — I hope you enjoy exploring this website and find my experience interesting. I'm on my way to my dreams, and hopefully not missing any interesting scenes along the way.
 
 ## Where to go next
 

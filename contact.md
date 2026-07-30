@@ -41,7 +41,7 @@ Welcome any form of helpful information. Looking for lab or research opportunity
   <h2>Thanks — message sent</h2>
   <p>I'll get back to you. In the meantime, you can also reach me here:</p>
   <ul>
-    <li><strong>Email:</strong>zimuniu7@gmail.com</li>
+    <li><strong>Email:</strong> zimuniu7@gmail.com</li>
     <li><strong>GitHub:</strong> <a href="https://github.com/Sg-fit">Sg-fit</a></li>
   </ul>
 </section>

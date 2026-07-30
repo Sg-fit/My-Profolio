@@ -3,7 +3,7 @@ title: Eleventy Blog & Wiki
 date: 2026-07-27
 description: This is a small project during the ESAP camp. 
 technologies: HTML, CSS, JavaScript, Eleventy
-github: https://github.com/Sg-fit/Hi
+github: https://github.com/Sg-fit/My-Profolio
 # demo:
 # screenshot:
 ---

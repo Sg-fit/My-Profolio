@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 title: Blog
-description: Small blog of how the projeccts are progressing and some casual sharing is caring from time to time
+description: Small blog of how the projects are progressing and some casual sharing from time to time
 permalink: /blog/
 ---
 
