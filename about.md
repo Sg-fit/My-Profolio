@@ -9,7 +9,7 @@ permalink: /about/
 
 As a high schooler studying abroad, I am currently studying and expanding my academic experience at [Friends' Central School](https://www.friendscentral.org/), based in Philadelphia, PA. Originally I am from Wuhan, China; however, I can argue that I am from Beijing (topic for another day).
 
-As an artist, I am able to play piano at a professional level. I also have a solid background in music theory, and a set of small projects is available [here](noteflight.com). Beside music (a major part of my artist experience and life), I do photography as a hobby, haven't professionally learned about it; a collection of work is available [here](web).
+As an artist, I am able to play piano at a professional level. I also have a solid background in music theory, and a set of small projects is available [here](noteflight.com). More recordings and scores are on my [music page]({{ '/music/' | url }}). Beside music (a major part of my artist experience and life), I do photography as a hobby, haven't professionally learned about it; a collection of work is available on my [photography page]({{ '/photography/' | url }}).
 
 As a researcher, I am deepening my understanding and exploring the frontier of computer science and cybersecurity. This summer, I am advancing my research about AI bot detection and blocking at the ESAP program at UPenn, periodical results hosted at [GitHub](https://sg-fit.github.io/Charweb/) and occasionally on [Charweb](https://charweb.net). More project ideas are [here](hi).
 

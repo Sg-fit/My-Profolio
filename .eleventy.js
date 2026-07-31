@@ -3,6 +3,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("favicon.svg");
+  eleventyConfig.addPassthroughCopy("audio");
+  eleventyConfig.addPassthroughCopy("scores");
+  eleventyConfig.addPassthroughCopy("js");
 
   // Don't turn the README into a page
   eleventyConfig.ignores.add("README.md");
